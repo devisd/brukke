@@ -1,0 +1,14 @@
+.nav {
+  @apply flex z-50 fixed rounded-t-sm w-full max-w-[950px] p-3 justify-center border-b border-b-[#80912b];
+
+  background: linear-gradient(to bottom, #acd700 0%, #a4cd00 50%, #a2c300 50%, #a8ca00 100%);
+
+  &Link {
+    @apply flex px-3 py-2 text-[14px] font-semibold hover:text-white hover:bg-[#9bc200] rounded-lg;
+
+    &Active {
+      @extend .navLink;
+      @apply bg-white text-black rounded-lg;
+    }
+  }
+}
